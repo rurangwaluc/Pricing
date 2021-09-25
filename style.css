@@ -1,0 +1,338 @@
+/* general styling */
+/*Font Awesome Fonts*/
+@font-face {
+  font-family: 'FontAwesome';
+  //in url add your folder path of FontAwsome Fonts
+  src: url('font-awesome/fontawesome-webfont.ttf') format('truetype');
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.25;
+  background-color: #F5F5F5;
+}
+
+
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+.main {
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 50px auto ;
+  width: 100%;
+  max-width: 1025px;
+  border-spacing: 0;
+  font-family: sans-serif;
+  color: #4a4a4a;
+}
+
+
+
+.pink_button {
+  background-color: #7C6E99;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.green_button {
+  background-color: #A7CB1A;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.blue_button {
+  background-color: #4C7CA5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+header{
+  /* width: 256.25px; */
+  background-color: #A7CB1A;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: -45px auto 15px;
+}
+header span{
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+.spans{
+  font-size: 12.5px!important;
+}
+.heading {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.heading tr :not(:first-child) {
+  border-left: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.heading tr td {
+  width: 200px;
+  padding: 20px 0px;
+}
+
+.heading tr td span,
+strong,
+button {
+  border: 0 !important;
+
+}
+
+.heading tr td strong {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.heading tr td .span_1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 12px;
+
+}
+
+.heading tr td .span_2 {
+  color: #BDBDBD;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+
+}
+
+.table {
+  background-color: #F7F7F7;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.tables tr :not(:first-child) {
+  border-left: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.expand-button {
+  position: relative;
+  width: 256.25px !important;
+}
+
+
+.accordion-toggle .expand-button:after {
+  
+  position: absolute;
+  left: .75rem;
+  top: 50%;
+  transform: translate(0, -50%); 
+  content: "-";
+}
+
+.accordion-toggle.collapsed .expand-button:after {
+  content: "+";  /* this is your text. You can also use UTF-8 character codes as I do here */
+  font-family: FontAwesome;
+ 
+  
+}
+
+.main_phone {
+ 
+  display: none;
+ 
+}
+
+
+
+@media screen and (max-width: 1041px) {
+  .main {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .main {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 700px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .main {
+    display: none;
+  }
+  .main_phone {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+  }
+  .main_phone table {
+ 
+    width: 100% !important;
+    
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: none;
+  }
+  .main_phone {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 450px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+  }
+  .main_phone table {
+ 
+    width: 100% !important;
+    
+  }
+ 
+}
+
+@media screen and (max-width: 464px) {
+  .main {
+    display: none;
+  }
+  .main_phone {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 350px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+  }
+  .main_phone table {
+ 
+    width: 100% !important;
+    
+  }
+ 
+}
+@media screen and (max-width: 364px) {
+  .main {
+    display: none;
+  }
+  .main_phone {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 320px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+    font-size: 16px;
+  }
+  .pink_button, .green_button, .blue_button{
+    font-size: 12px;
+  }
+  .main_phone table {
+ 
+    width: 100% !important;
+    
+  }
+ 
+}
+@media screen and (max-width: 324px) {
+  .main {
+    display: none;
+  }
+  .main_phone {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 50px auto;
+    width: 100%;
+    max-width: 280px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+    font-size: 16px;
+  }
+  .pink_button, .green_button, .blue_button{
+    font-size: 12px;
+  }
+  .main_phone table {
+ 
+    width: 100% !important;
+    
+  }
+ 
+}
